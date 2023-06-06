@@ -14,7 +14,7 @@ body{
 .sidebar{
     grid-column:1/1;
     grid-row: 1/3;
-    background-color: #06b6d4;
+    background-color: #0891b2;
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
@@ -109,4 +109,136 @@ ul li a{
 .settings{
     display: grid;
     align-self: start;
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 176px;
+    background-color: white;
+    
+    
+}
+.lupa{
+    grid-column: 1/1;
+    grid-row: 1/1;
+    width: 30px;
+    margin-top:4px;
+    align-self:center ;
+    justify-self: end;
+    
+}
+.search{
+background-color: lightgray;
+border:0;
+padding: 5px 2px;
+border-radius: 10px;
+max-height: 30px;
+min-width: 150px;
+max-width: 500px;
+grid-column: 2/3;
+grid-row: 1/1;
+align-self: center;
+justify-self: ;
+
+}
+.top{
+    grid-template-columns: 60px 1fr 100px 100px;
+    grid-column: 1/3;
+    display: grid;
+    align-items: center;
+    gap: 10px;
+}
+
+.bell{
+    
+    grid-column: 3/3;
+    grid-row: 1/1;
+    width: 30px;
+    align-self: center;
+    
+    
+    align-self:center ;
+    
+}
+
+.bigboss{
+    grid-column: 3/3;
+    grid-row: 1/1;
+    width: 45px;
+    align-self: center;
+    border-radius: 50%;
+    justify-self: end;
+
+}
+.bigboss2{ 
+    width: 60px;
+    align-self: center;
+    border-radius: 60%;
+    justify-self: end;
+   
+
+}
+.bigbossName{
+    font-size: 23px;
+    font-family: 'roboto' , sans-serif;
+    font-weight: 700;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 120px 1fr repeat(3, 100px);
+    grid-column:1/3;
+    align-items: center;
+}
+.middle{
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    grid-column: 2/3;
+    gap: 6px;
+}
+.hi{
+    font-size: 13px;
+    
+    font-weight: 700;
+}
+.username{
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-family: 'roboto' , sans-serif;
+    font-weight: 700;
+    margin-left: 5px;
+
+}
+
+.socialbtn{
+    width: 85px;
+    grid-column: 3/4;
+    grid-row: 1/1;
+    background-color: #0aabd3;
+    color: white;
+    font-family: 'roboro' , sans-serif;
+    font-weight: 700;
+    padding: 10px 5px;
+    border:0;
+    border-radius: 20px;
+    
+}
+.new{
+    grid-column: 3/4;
+    align-self: center;
+    justify-self: center;
+}
+.upload{
+    grid-column: 4/5;
+   
+    
+    align-self: center;
+    justify-self: center;
+}
+.share{
+    grid-column: 5/6;
+        
+    align-self: center;
+    justify-self: center;
 }
