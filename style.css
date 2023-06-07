@@ -1,15 +1,35 @@
-body{
+body, html {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    
 
+}
+body{
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .container{
-    height: 100vh;
+    height: 1009px;
     display: grid;
-    grid-template-columns: 1fr 4fr ;
+    grid-template-columns: 250px 4fr ;
     grid-template-rows: 175px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(228, 227, 227);
+    overflow: hidden;
+    
+}
+.article{
+    display: grid;
+    grid-column: 2/3;
+    gap: 30px;
+    grid-template-columns: repeat(2, 2fr) 1fr;
+    grid-template-rows: 70px repeat(auto-fill, 200px);
+    height: 100%f;
+    overflow-y: auto;
 }
 
 .sidebar{
@@ -18,8 +38,11 @@ body{
     background-color: #0891b2;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    grid-template-rows: 106px 330px 222px;
     align-items: center;
     justify-items:start ;
+    
+    
 }
 .logo{
     
@@ -79,7 +102,7 @@ ul li a{
 .navImg{
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(54deg) brightness(110%) contrast(101%);
     grid-column: 1;
-    grid-row:2/
+    grid-row:2/3;
 }
 .svgs{
     display: grid;
@@ -105,7 +128,7 @@ ul li a{
 .settingsUi{
     display: grid;
     align-self: start;
-    margin:0;
+    margin: 0;
 }
 .settings{
     display: grid;
@@ -118,7 +141,7 @@ ul li a{
     width: 100%;
     height: 176px;
     background-color: white;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.637);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.212);
     
     
 }
@@ -133,7 +156,7 @@ ul li a{
 }
 .search{
 background-color: lightgray;
-border:0;
+border: 0;
 padding: 5px 2px;
 border-radius: 10px;
 max-height: 30px;
@@ -142,7 +165,7 @@ max-width: 500px;
 grid-column: 2/3;
 grid-row: 1/1;
 align-self: center;
-justify-self: ;
+
 
 }
 .top{
@@ -244,10 +267,171 @@ justify-self: ;
     align-self: center;
     justify-self: center;
 }
-.article{
+
+.card{
+    background-color: white;
+   
     display: grid;
-    grid-column: 2/3;
+    grid-template-columns: 10px 1fr;
+    grid-template-rows: repeat(3 , 1fr);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.212);
     
+    
+
+}
+.yellowLine{
+    background-color: orange;
+    width: 10px;
+    grid-row: 1/4;
+}
+.c3{
+    grid-row: 2/3;
+    
+}
+.c1{
+    margin-left: 20px;
+    grid-row: 2 / 3;
+}
+.c4{
+    grid-row: 3/4;
+}
+.c2{
+    grid-row: 3/4;
+    margin-left: 20px;
+}
+.c5{
+    grid-row: 4/5;
+    margin-left: 20px;
+}
+.c6{
+    grid-row: 4/5;
+}
+.Yprojects, 
+.announcementText{
+    font-family: 'roboto' , sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+.Yprojects{
+    grid-row: 1/2;
+    align-self:end;
+    margin-left: 10px;
+
+}
+.announcementText{
+    grid-row:1/2;
+    grid-column: 3/4;
+    align-self: end;
+    justify-self: center;
+}
+.cardTitle{
+    grid-row: 1/1;
+    margin-left: 20px;
     align-self: center;
-    grid-template-columns: repeat(4, 1fr);
+    font-family: 'roboto' , sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.cardContent{
+    
+    margin-left: 20px;
+    align-self: start;
+    font-family: 'roboto' , sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+}
+.cardIcons{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-right: 20px;
+    
+}
+.addFav{
+    width: 20px;
+
+}
+.shared{
+    width: 20px;
+    grid-column: 3/4;
+}
+
+.announce{
+    grid-column: 3/4;
+    grid-row: 2/3 ;
+     
+    display: grid;
+    grid-template-columns: 1fr ; 
+    grid-template-rows: repeat(3, 70px);
+   gap: 20px;
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.212);
+    align-items: space-between;
+}
+.announcements{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+   
+}
+.announceContent{
+    font-size: 12px;
+    color: gray;
+}
+.announceTitle{
+    align-self: end;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'roboto' , sans-serif;
+}
+.snake{
+    
+    width: 40px;
+    border-radius: 50%;
+}
+
+.trending{
+    
+    grid-column: 3/4;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 87px 1fr;
+    grid-template-rows: repeat(4 , 1fr);
+    background-color: white;
+    height: 300px;
+    width: 200px;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.212);
+    border-radius: 10px;
+}
+.sk3{
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+}
+.sk2{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.sk4{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.sp1{
+    justify-self: start;
+    font-family: 'roboto' , sans-serif;
+    font-size: 16px;
+    font-weight: ;
 }
